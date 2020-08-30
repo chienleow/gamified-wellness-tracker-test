@@ -13,8 +13,8 @@
 ActiveRecord::Schema.define(version: 2020_08_29_215254) do
 
   create_table "goals", force: :cascade do |t|
-    t.text "goal"
-    t.text "daily_top_5"
+    t.string "category"
+    t.string "description"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
