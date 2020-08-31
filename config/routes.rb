@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
   get '/' => 'sessions#welcome'
-  get 'login' => 'sessions#new'
-  post 'login' => 'sessions#create'
-  get 'signup' => 'users#new' # we don't need a post 'signup' because resources :users give us post 'users' => 'users#create'
+  get '/login' => 'sessions#new'
+  post '/login' => 'sessions#create'
+  get '/signup' => 'users#new' # we don't need a post 'signup' because resources :users give us post 'users' => 'users#create'
 
   resources :user_goals
   resources :goals
