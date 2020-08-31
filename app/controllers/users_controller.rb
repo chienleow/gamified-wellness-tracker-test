@@ -23,4 +23,5 @@ class UsersController < ApplicationController
         def user_params
             params.require(:user).permit(:first_name, :last_name, :username, :password)
         end
+        # ADD password_confirmation later maybe?
 end
