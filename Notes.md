@@ -22,3 +22,21 @@ Confirm:
 - [ ] Limited logic in controllers
 - [ ] Views use helper methods if appropriate
 - [ ] Views use partials if appropriate
+
+
+
+
+
+
+
+# <option value="<%= @user.team_id %>">Team A</option>
+
+# <option value="1">Team A</option>
+# <% teams.each do |team| %>
+#   <option value=<%= team.id %>><%= team.name %></option>
+# <% end %>
+
+
+# stretch goals:
+# 1. users/admin can change team name
+# 2. 
