@@ -6,7 +6,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :last_name
       t.string :password_digest
       t.integer :personal_points, :default => 0
-      t.belongs_to :team, null: false, foreign_key: true, optional: true
+      t.belongs_to :team, null: false, foreign_key: true
 
       t.timestamps
     end
